@@ -11,7 +11,7 @@ Weather is sometimes difficult to predict. This accurate weather app allows to f
 - Weather Radar & Rain maps
 
 ### Live-Preview
-[Click Here to View Live Preview]()
+[Click Here to View Live Preview](https://weather-nj4qwchhn-simrans-projects-dee52ad7.vercel.app/)
 
 ### Sample-Image
 ![Homepage](assets/Snapshot.png)
