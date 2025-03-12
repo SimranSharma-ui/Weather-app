@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import { FaSearch } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaWind } from "react-icons/fa6";
@@ -11,6 +10,8 @@ const Form = () => {
     const [loading, setLoading] = useState(false);
     const [cityName, setCityName] = useState('');
     const openWeatherApiKey = process.env.Api_Key;
+    const ApiURL = process.env.Api_url;
+    console.log(ApiURL)
 
     const fetchWeatherData = async (city) => {
         setLoading(true);
@@ -23,7 +24,7 @@ const Form = () => {
             setWeather(data);
         } catch (err) {
             console.log("Error:", err);
-            setWeather({}); 
+           
         } finally {
             setLoading(false);
         }
